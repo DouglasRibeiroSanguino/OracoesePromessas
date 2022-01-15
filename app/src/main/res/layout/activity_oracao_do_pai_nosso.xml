@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pedido_a_Santa_Rita">
+    tools:context=".Oracao_do_Pai_Nosso">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_start"
@@ -35,38 +35,30 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="50dp"/>
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/navigate_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:navigationIcon="@drawable/ic_navigate_back"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/oracao_pai_nosso_ph"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/santa_rita"
+        android:src="@drawable/pai_nosso"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/text_pedido"
+        app:layout_constraintBottom_toTopOf="@id/text_oracao"
         android:layout_marginBottom="15dp"
         android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/santa_rita_cassia"
-        android:contentDescription="@string/todo" />
-
     <TextView
-        android:id="@+id/text_pedido"
-        android:layout_width="350dp"
-        android:layout_height="270dp"
+        android:id="@+id/text_oracao"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:text="@string/Oracao_do_Pai_Nosso_text"
         android:textSize="14sp"
-        android:text="@string/Oracao_do_pedido"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
         app:layout_constraintTop_toTopOf="@id/guide_top"
@@ -80,16 +72,23 @@
         android:text="@string/compartilhe"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@id/guide_start"
-        app:layout_constraintTop_toBottomOf="@id/text_pedido"
+        app:layout_constraintTop_toBottomOf="@id/text_oracao"
         android:paddingTop="18dp"/>
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/share_pedido"
+        android:id="@+id/share_oracao"
         android:layout_width="45dp"
         android:layout_height="wrap_content"
         app:navigationIcon="@drawable/ic_share"
         app:layout_constraintStart_toEndOf="@id/compartilhe"
         app:layout_constraintTop_toTopOf="@id/compartilhe"/>
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/navigate_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_navigate_back"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,5 +15,11 @@ class MainActivity : AppCompatActivity() {
         startActivity(i)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
+
+    btn_pai_nosso.setOnClickListener {
+        val i = Intent(this, Oracao_do_Pai_Nosso::class.java)
+        startActivity(i)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+        }
     }
 }

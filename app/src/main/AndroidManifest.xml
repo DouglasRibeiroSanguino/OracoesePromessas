@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OraçõesPromessas">
         <activity
+            android:name=".Oracao_do_Pai_Nosso"
+            android:exported="false" />
+        <activity
             android:name=".Pedido_a_Santa_Rita"
             android:exported="false" />
         <activity
