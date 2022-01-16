@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="10dp"/>
+        app:layout_constraintGuide_end="20dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_top"
@@ -50,7 +50,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/text_pedido"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="15sp"
         android:contentDescription="@string/todo" />
 
     <ImageView
@@ -61,8 +61,8 @@
 
     <TextView
         android:id="@+id/text_pedido"
-        android:layout_width="350dp"
-        android:layout_height="270dp"
+        android:layout_width="350sp"
+        android:layout_height="270sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="14sp"
@@ -70,7 +70,8 @@
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
         app:layout_constraintTop_toTopOf="@id/guide_top"
-        app:layout_constraintBottom_toBottomOf="@id/guide_under"/>
+        app:layout_constraintBottom_toBottomOf="@id/guide_under"
+        android:layout_marginTop="70dp"/>
 
     <TextView
         android:id="@+id/compartilhe"

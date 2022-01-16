@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="10dp"/>
+        app:layout_constraintGuide_end="20dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_top"
@@ -53,8 +53,8 @@
 
     <TextView
         android:id="@+id/text_oracao"
-        android:layout_width="370dp"
-        android:layout_height="130dp"
+        android:layout_width="350sp"
+        android:layout_height="130sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:text="@string/Oracao_do_Pai_Nosso_text"
