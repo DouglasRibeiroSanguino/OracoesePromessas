@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prayers &amp; Promises</string>
+    <string name="saudacoes">This App was developed without profit intention so it will not have ads and it was also developed as part of a promise made by the developer, enjoy and I hope it can help you as it helped me!</string>
+    <string name="todo">TODO</string>
+    <string name="pedido_a_santa_rita_de_cassia">Request to Santa Rita de Cassia</string>
+    <string name="oracao_do_pai_nosso">Our Father Prayer</string>
+    <string name="Oracao_do_pedido">O mighty and glorious Saint Rita called Saint of impossible causes, lawyer of desperate cases, helper at the last minute, refuge and shelter from the pain that drags you into the abyss of sin and hopelessness, with all confidence in Your power next to the Sacred Heart of Jesus, I turn to You in the difficult and unforeseen case, which painfully oppresses my heart. (Make your wish). Obtain the grace I desire, for being necessary to me, I want it. Presented by you my prayer, my request, for you who are so loved by God, will certainly be answered. Tell Our Lord that I will make use of grace to improve my life and my customs and to sing Divine Mercy on Earth and in Heaven. Saint Rita of impossible causes, intercede for us! Amen.</string>
+    <string name="Oracao_do_Pai_Nosso_text">Our Father who art in heaven, Hallowed be thy name, Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses as we forgive those who trespass against us, and lead us not into temptation, but deliver us from evil. Amen.</string>
+    <string name="compartilhe">Share</string>
+    <string name="share_app">I am sharing this prayer with you:</string>
+</resources>
