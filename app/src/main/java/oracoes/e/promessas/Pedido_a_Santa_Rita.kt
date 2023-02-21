@@ -1,16 +1,20 @@
 package oracoes.e.promessas
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_pedido_a_santa_rita.*
+import androidx.appcompat.app.AppCompatActivity
+import oracoes.e.promessas.databinding.ActivityPedidoASantaRitaBinding
 
 class Pedido_a_Santa_Rita : AppCompatActivity() {
+
+    private lateinit var binding: ActivityPedidoASantaRitaBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pedido_a_santa_rita)
+        binding = ActivityPedidoASantaRitaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-    share_pedido.setOnClickListener {
+    binding.sharePedido.setOnClickListener {
         val shareIntent = Intent()
         shareIntent.action = Intent.ACTION_SEND
         shareIntent.type="text/plain"
@@ -21,8 +25,9 @@ class Pedido_a_Santa_Rita : AppCompatActivity() {
         startActivity(shareIntent)
         }
 
-    navigate_back.setOnClickListener {
+    binding.navigateBack.setOnClickListener {
         val i = Intent(this, MainActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(i)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         }
@@ -30,6 +35,7 @@ class Pedido_a_Santa_Rita : AppCompatActivity() {
 
     override fun onBackPressed() {
         val i = Intent(this, MainActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
         startActivity(i)
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
         super.onBackPressed()

@@ -65,7 +65,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_santa_rita"
-        android:layout_marginTop="50sp"
+        android:layout_marginTop="60sp"
         android:contentDescription="@string/todo" />
 
     <com.google.android.material.button.MaterialButton
@@ -80,5 +80,30 @@
         app:layout_constraintTop_toBottomOf="@id/pai_nosso"
         app:cornerRadius="15dp"
         tools:targetApi="lollipop"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_santa_rita"
+        android:progressTint="@color/black"
+        android:indeterminateTint="@color/black"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textpleasewait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please Wait..."
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pai_nosso"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
