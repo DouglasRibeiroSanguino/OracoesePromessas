@@ -1,9 +1,9 @@
-package oracoes.e.promessas
+package oracoes.e.promessasnew
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import oracoes.e.promessas.databinding.ActivityPedidoASantaRitaBinding
+import oracoes.e.promessasnew.databinding.ActivityPedidoASantaRitaBinding
 
 class Pedido_a_Santa_Rita : AppCompatActivity() {
 

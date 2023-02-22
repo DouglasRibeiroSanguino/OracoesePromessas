@@ -1,4 +1,4 @@
-package oracoes.e.promessas
+package oracoes.e.promessasnew
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

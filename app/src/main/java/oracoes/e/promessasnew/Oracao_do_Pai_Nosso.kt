@@ -1,9 +1,9 @@
-package oracoes.e.promessas
+package oracoes.e.promessasnew
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import oracoes.e.promessas.databinding.ActivityOracaoDoPaiNossoBinding
+import oracoes.e.promessasnew.databinding.ActivityOracaoDoPaiNossoBinding
 
 class Oracao_do_Pai_Nosso : AppCompatActivity() {
 

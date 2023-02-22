@@ -1,9 +1,9 @@
-package oracoes.e.promessas
+package oracoes.e.promessasnew
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import oracoes.e.promessas.databinding.ActivitySplashScreenBinding
+import oracoes.e.promessasnew.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
 

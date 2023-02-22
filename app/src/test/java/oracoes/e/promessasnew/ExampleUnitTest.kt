@@ -1,4 +1,4 @@
-package oracoes.e.promessas
+package oracoes.e.promessasnew
 
 import org.junit.Test
 

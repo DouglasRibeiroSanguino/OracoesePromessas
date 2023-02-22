@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Oracao_do_Pai_Nosso">
+    tools:context="oracoes.e.promessasnew.Oracao_do_Pai_Nosso">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_start"

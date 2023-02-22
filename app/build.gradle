@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'oracoes.e.promessas'
+    namespace 'oracoes.e.promessasnew'
     compileSdk 33
 
     defaultConfig {
-        applicationId "oracoes.e.promessas"
+        applicationId "oracoes.e.promessasnew"
         minSdk 16
         targetSdk 33
         versionCode 1
