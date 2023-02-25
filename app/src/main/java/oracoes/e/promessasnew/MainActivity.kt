@@ -17,48 +17,44 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-    binding.btnSantaRita.setOnClickListener {
+        binding.btnSantaRita.setOnClickListener {
         binding.progressBar.visibility = View.VISIBLE // para exibir o loading
         binding.textpleasewait.visibility = View.VISIBLE
 
         Handler(Looper.getMainLooper()).postDelayed(
-            {
-                binding.progressBar.visibility = View.GONE // para ocultar o loading  // This method will be executed once the timer is over
-                binding.textpleasewait.visibility = View.GONE
+                {
+                    binding.progressBar.visibility = View.GONE // para ocultar o loading  // This method will be executed once the timer is over
+                    binding.textpleasewait.visibility = View.GONE
 
-                val i = Intent(this, Pedido_a_Santa_Rita::class.java)
-                startActivity(i)
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    val i = Intent(this, Pedido_a_Santa_Rita::class.java)
+                    startActivity(i)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
+                },
+            1500 // value in milliseconds
+            )
+        }
 
-            },
-            2000 // value in milliseconds
-        )
-
-    }
-
-    binding.btnPaiNosso.setOnClickListener {
+        binding.btnPaiNosso.setOnClickListener {
         binding.progressBar.visibility = View.VISIBLE // para exibir o loading
         binding.textpleasewait.visibility = View.VISIBLE
 
         Handler(Looper.getMainLooper()).postDelayed(
-            {
-                binding.progressBar.visibility = View.GONE // para ocultar o loading  // This method will be executed once the timer is over
-                binding.textpleasewait.visibility = View.GONE
+                {
+                    binding.progressBar.visibility = View.GONE // para ocultar o loading  // This method will be executed once the timer is over
+                    binding.textpleasewait.visibility = View.GONE
 
-                val i = Intent(this, Oracao_do_Pai_Nosso::class.java)
-                startActivity(i)
-                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-
-            },
-            2000 // value in milliseconds
-        )
-
+                    val i = Intent(this, Oracao_do_Pai_Nosso::class.java)
+                    startActivity(i)
+                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+                    finish()
+                },
+            1500 // value in milliseconds
+            )
+        }
     }
-
-}
     override fun onBackPressed() {
-        finish()
         super.onBackPressed()
+        finish()
     }
-
 }
