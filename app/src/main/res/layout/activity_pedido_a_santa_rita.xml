@@ -61,8 +61,8 @@
 
     <TextView
         android:id="@+id/text_pedido"
-        android:layout_width="350sp"
-        android:layout_height="270sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="14sp"
@@ -71,7 +71,11 @@
         app:layout_constraintEnd_toEndOf="@id/guide_end"
         app:layout_constraintTop_toTopOf="@id/guide_top"
         app:layout_constraintBottom_toBottomOf="@id/guide_under"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"/>
 
     <TextView
         android:id="@+id/compartilhe"
